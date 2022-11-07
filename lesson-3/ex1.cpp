@@ -22,6 +22,24 @@ class Client{
     }
 };
 
+class Date{
+    private:
+    int day;
+    int month;
+    int year;
+
+    public:
+    Date(){};
+    Date(int d, int m, int y){
+        this->day = d;
+        this->month = m;
+        this->year = y;
+    }
+    string showDate(){
+        return to_string(this->day) + ":" + to_string(this->month) + ":" + to_string(this->year);
+    }
+};
+
 class BankAccount{
     private:
     Client owner;
