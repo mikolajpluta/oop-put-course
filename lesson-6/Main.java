@@ -3,7 +3,7 @@ public class Main {
 
         int x = new NumberFunction(10, 20).min();
 
-        Logharitm l = new Logharitm(1, 5);
+        Logarithm l = new Logarithm(1, 5);
 
         try{
             System.out.println(l.doubleValue());
