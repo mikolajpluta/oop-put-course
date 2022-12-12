@@ -44,7 +44,7 @@ public class Main extends Application implements EventHandler<ActionEvent>{
         grid.setPadding(new Insets(10, 10, 10, 10));
         grid.setVgap(10);
         grid.setHgap(10);
-        Scene scene = new Scene(grid, 1000, 1000);
+        Scene scene = new Scene(grid, 820, 820);
         window.setScene(scene);
         window.show();
 
