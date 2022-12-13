@@ -81,19 +81,19 @@ public class Main extends Application implements EventHandler<ActionEvent>{
                 if(this.done < 16){
                     if(this.visible.size() < 2){
                         if(!this.fields[i].checkIfDone()){
-                            if(!this.fields[i].checkIfVisible()){
-                                this.fields[i].show();
+                            if(!this.fields[i].isCardVisible()){
+                                this.fields[i].flipCard();
                                 this.visible.add(fields[i]);
                             }
                         }
                     }else{
-                        if(this.visible.get(0).clas() == this.visible.get(1).clas()){
+                        if(this.visible.get(0).cardClass() == this.visible.get(1).cardClass()){
                             this.visible.get(0).markAsDone();
                             this.visible.get(1).markAsDone();
                             this.done += 2;
                         }else{
-                            this.visible.get(0).hide();
-                            this.visible.get(1).hide();
+                            this.visible.get(0).flipCard();
+                            this.visible.get(1).flipCard();
                         }
                         this.visible = new ArrayList<Field>();
                     }

@@ -2,7 +2,7 @@ package Main;
 
 public interface GameCard {
     Boolean isVisible = false;
-    public void show();
-    public void hide();
+    public void flip();
     public Boolean checkIfVisible();
+    public String showClass();
 }
