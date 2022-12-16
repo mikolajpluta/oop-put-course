@@ -4,7 +4,7 @@ import javafx.scene.control.Button;
 
 public class Card implements GameCard{
     private String img_src;
-    private String hidden_img_src = "D:\\school\\sem_III\\Programowanie_obiektowe\\oop-put-course\\project-1\\memorygame\\src\\Main\\img\\Banana-Single.jpg";
+    private String hidden_img_src = "D:\\school\\project-1\\memorygame\\src\\Main\\img\\Banana-Single.jpg";
     private MyImg img;
     private Boolean is_visible = false;
     private String cls;
